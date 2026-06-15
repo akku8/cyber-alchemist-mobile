@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Alchemist's Codex",
+    "slug": "alchemist-mobile",
+    "owner": "pakku8496",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "alchemist-mobile",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a12"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pakku8496.alchemistcodex"
+    },
+    "android": {
+      "package": "com.pakku8496.alchemistcodex",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0a0a12"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a69bebdc-e164-4367-9e05-9c8505c57160"
+      }
+    }
+  }
+}

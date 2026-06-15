@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/mobile/"
+title = "Alchemist's Codex Mobile"
+version = "1.0.0"
+id = "artifacts/alchemist-mobile"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/mobile/" ]
+localPort = 23338
+
+[services.development]
+run = "pnpm --filter @workspace/alchemist-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/alchemist-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/alchemist-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "23338"
+BASE_PATH = "/mobile/"
